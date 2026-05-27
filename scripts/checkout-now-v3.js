@@ -614,7 +614,7 @@ async function createOrderViaWallet(confirmationToken, paymentMethodId) {
         ?.getAttribute("data-shipping-profile-id") || undefined;
 
   const orderData = {
-    pageId: "3EYyCprJfhiHNrKjgrt7qljxPN5pXxlJtrJjbEzg-oKhI2gerlAipSIFa-b-S6pt",
+    pageId: "xWaJ-9ipElDyKFlUNm81jOPzIKtHz9jgPxOiZygOExdvyRctrQy8QD0-cb0U2TVi",
     action: "process",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1,
@@ -1412,7 +1412,7 @@ async function createOrderViaPaypal(isExpress = false) {
   const shippingProfileId = +document.querySelector(`[data-product-id="${selectedProduct.id}"]`)?.getAttribute('data-shipping-profile-id') || undefined;
   const sameAddress = isSameAddress();
   const orderData = {
-    pageId: "3EYyCprJfhiHNrKjgrt7qljxPN5pXxlJtrJjbEzg-oKhI2gerlAipSIFa-b-S6pt",
+    pageId: "xWaJ-9ipElDyKFlUNm81jOPzIKtHz9jgPxOiZygOExdvyRctrQy8QD0-cb0U2TVi",
     action: "process",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1, // VRIO URL ending /connection
@@ -1712,7 +1712,7 @@ async function createOrderViaKlarna() {
   const sameAddress = isSameAddress();
 
   const orderData = {
-    pageId: "3EYyCprJfhiHNrKjgrt7qljxPN5pXxlJtrJjbEzg-oKhI2gerlAipSIFa-b-S6pt",
+    pageId: "xWaJ-9ipElDyKFlUNm81jOPzIKtHz9jgPxOiZygOExdvyRctrQy8QD0-cb0U2TVi",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1,
     email: email,
@@ -2091,7 +2091,7 @@ async function createOrderViaCreditCard() {
   let orderTotal = Math.max(0, Number(selectedProduct.price) * selectedProduct.quantity);
 
   const orderData = {
-    pageId: "3EYyCprJfhiHNrKjgrt7qljxPN5pXxlJtrJjbEzg-oKhI2gerlAipSIFa-b-S6pt",
+    pageId: "xWaJ-9ipElDyKFlUNm81jOPzIKtHz9jgPxOiZygOExdvyRctrQy8QD0-cb0U2TVi",
     action: "process",
     campaign_id: CAMPAIGN_ID,
     connection_id: 1, // VRIO URL ending /connection
@@ -4366,7 +4366,7 @@ async function returnPaypal() {
 ;
 
     const body = {
-        pageId: "3EYyCprJfhiHNrKjgrt7qljxPN5pXxlJtrJjbEzg-oKhI2gerlAipSIFa-b-S6pt",
+        pageId: "xWaJ-9ipElDyKFlUNm81jOPzIKtHz9jgPxOiZygOExdvyRctrQy8QD0-cb0U2TVi",
         action: "process",
         campaign_id: CAMPAIGN_ID,
         connection_id: 1,
